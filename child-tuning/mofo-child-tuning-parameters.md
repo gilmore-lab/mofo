@@ -2,8 +2,8 @@
 ## Stimulus set: mofo_tuning_child_20150428
 
 ### 
-|  Condition | Coherence   | Speed   |Direction   |  Density (1.2 Hz) | Density (3.6 Hz)| Notes|
-|---|---|---|---|---|---
+|  Condition | Coherence   | Speed   |Direction   |  Density (1.2 Hz) | Density (36 Hz)| Notes|
+|---|---|---|---|---|---|---|
 | 1 |100-100 |2 |0-180 |10 |10 | |
 | 2 |100-100 |2 |0-45  |10 |10 | |
 | 3 |100-100 |2 |0-5   |10 |10 | |
