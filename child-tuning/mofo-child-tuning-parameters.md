@@ -2,7 +2,7 @@
 ## Stimulus set: mofo_tuning_child_20150428
 
 ### 
-|  Condition | Coherence   | Speed   |Direction   |  Density (1.2 Hz) | Density (36 Hz)| Notes|
+|  Condition | Coherence - PctCoher   | Speed - Displ (Amin)  |Direction   |  Density (1.2 Hz) | Density (36 Hz)| Notes|
 |---|---|---|---|---|---|---|
 | 1 |100-100 |2 |0-180 |10 |10 | |
 | 2 |100-100 |2 |0-45  |10 |10 | |
