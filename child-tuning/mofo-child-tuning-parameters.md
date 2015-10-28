@@ -2,8 +2,8 @@
 ## Stimulus set: mofo_tuning_child_20150428
 
 ### 
-Temp Freq (Hz): F1 = 1.2, F2 = 36
-Table below values for F1-F2
+Temp Freq (Hz): F1 = 1.2, F2 = 36  
+Table below values for F1-F2  
 
 |  Condition | Coherence - PctCoher   | Speed - Displ (Amin)  |Direction - Dir Mean (Deg)  |  Density (Pct) | Notes|
 |---|---|---|---|---|---|
@@ -19,8 +19,8 @@ Table below values for F1-F2
 | 10|100-100 |10-10|0-180 |10-0  |no background |
 
 
-View Distance: 60.31
-Mean Lum: 40.73
-Contrast %: 90.00
-Pix size (Amin): 7.00
+View Distance: 60.31  
+Mean Lum: 40.73  
+Contrast %: 90.00  
+Pix size (Amin): 7.00  
 
