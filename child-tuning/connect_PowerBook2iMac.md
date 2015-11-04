@@ -6,5 +6,5 @@
 - Connect the PowerBook G4 and the iMac using the firewire cable
 - On the PowerBook G4 hold down the 't' key while pressing the Power button
   - This will start the PowerBook G4 in 'Firewire Target Disk Mode'
-- The PowerBook G4 will show up as an external drive (XXX) on the iMac
+- The PowerBook G4 will show up as an external drive (GilmorePB12_HD) on the iMac
   
