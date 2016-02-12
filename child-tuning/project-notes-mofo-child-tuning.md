@@ -1,6 +1,21 @@
-# project-notes-mofo-child-tuning
+# Child Motion Form (MOFO) Project Notes
 
 This is the project notes file for the MOFO child tuning project.
+
+## 2016-02-12
+- ars copied the script 'script-run-subfolders.R' into the child-tuning/R folder
+  - this script is not complete
+
+## 2016-02-08  
+
+- Started to review the mofo-RLS-file-convert.R function and how it works  
+
+- To do  
+  - Look at displays and create a drawing and written description of each of the 10 conditions. (meet on 2016-02-10 @ 11:30) 
+  - Read Fesi JD, et. al. 2011 (10.1016/j.visres.2011.07.015) and 2014 (10.1016/j.visres.2014.04.004) 
+  
+- mofo child tuning parameters located at gilmore-lab/mofo/child-tuning/[mofo-child-tuning-parameters.md](https://github.com/gilmore-lab/mofo/blob/master/child-tuning/mofo-child-tuning-parameters.md)
+
 
 ## 2015-12-17-11:17
 
