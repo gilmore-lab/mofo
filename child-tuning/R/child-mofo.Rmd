@@ -1,0 +1,35 @@
+---
+title: "child-mofo"
+author: "gilmore et al"
+date: "February 22, 2016"
+output: html_document
+---
+
+## Preliminaries
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+wd.dir <- getwd()
+data.dir <- '../data/Thresh100'
+rmd.dir <- wd.dir
+source('./mofo-RLS-file-convert.R')
+
+this.sub <- '060310lesu'
+```
+
+## Import one dataset: `r this.sub`
+
+```{r}
+df <- mofo.RLS.file.convert(dir=paste(data.dir, this.sub, sep="/"))
+str(df)
+```
+
+## Plot some data from this
+
+```{r simple-plot}
+plot(df$Channel, df$Signal)
+with(df, coplot(Signal ~ Channel | Harm))
+```
+

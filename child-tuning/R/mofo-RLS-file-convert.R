@@ -105,23 +105,23 @@ cat(msg, "\n", sep="")
 if( study == 'mofo-child-tuning') 
 {
 	#	iCond	Coherence   Speed	  Direction	Density	Pattern
-	#	1		  100-100		  2deg/s	0-180		  10-10	  trans dir-180, 
-	#	2		  100-100		  2deg/s	0-45		  10-10	  trans dir-45
-	#	3	  	100-100		  2deg/s	0-5			  10-10	  trans dir-5
-	#	4		  0-100		    2deg/s	0-0			  10-10	  trans coh-100
-	#	5		  100-100		  2deg/s	0-180		  10-0	  trans fig-only
-	#	6		  100-100		  10deg/s	0-180		  10-10	  trans dir-180
-	#	7		  100-100		  10deg/s	0-45		  10-10	  trans dir-45
-	#	8		  100-100		  10deg/s	0-5			  10-10	  trans	dir-5
-	#	9		  0-100		    10deg/s	0-0			  10-10	  trans coh-100
-	# 10	  100-100		  10deg/s	0-180		  10-0	  trans fig-only
+	#	1		  100-100		  1.2deg/s	0-180		  10-10	  trans dir-180, 
+	#	2		  100-100		  1.2deg/s	0-45		  10-10	  trans dir-45
+	#	3	  	100-100		  1.2deg/s	0-5			  10-10	  trans dir-5
+	#	4		  0-100		    1.2deg/s	0-0			  10-10	  trans coh-100
+	#	5		  100-100		  1.2deg/s	0-180		  10-0	  trans fig-only
+	#	6		  100-100		  6deg/s	0-180		  10-10	  trans dir-180
+	#	7		  100-100		  6deg/s	0-45		  10-10	  trans dir-45
+	#	8		  100-100		  6deg/s	0-5			  10-10	  trans	dir-5
+	#	9		  0-100		    6deg/s	0-0			  10-10	  trans coh-100
+	# 10	  100-100		  6deg/s	0-180		  10-0	  trans fig-only
  # Pattern = factor( rep( c(1,2,3), each=(3*nHarm*NCh)) , labels=c("rad", "rot", "trans") )
   
  #  Speed = factor( rep( rep( c(1, 2, 3), each=(nHarm*NCh) ), times=3), labels=c("2deg/s", "4deg/s", "8deg/s"), ordered=TRUE)
   
-Direction = factor( rep( c(1,2,3,4,5), each=(nHarm*NCh)) , labels=c("0-180", "0-45", "0-5" , "0-0", "0-180 no background" ))
+Direction = factor( rep( c(1,2,3,4,5), each=(nHarm*NCh)) , labels=c("0-180", "0-45", "0-5" , "0-0", "0-180-no-bgnd" ))
 
-Speed = factor( rep( rep( c(1, 2), each=(nHarm*NCh) ), times=5), labels=c("2deg/s", "10deg/s"), ordered=TRUE)
+Speed = factor( rep( rep( c(1, 2), each=(nHarm*NCh) ), times=5), labels=c("1.2deg/s", "6deg/s"), ordered=TRUE)
 
 }
 
