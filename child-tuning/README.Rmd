@@ -2,7 +2,7 @@
 title: "README.md"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
-output: html_document:
+output: html_document
 bibliography: bibliography.bib
 ---
 
@@ -17,7 +17,7 @@ This is the repo for the Motion Form (MOFO) tuning study with child participants
 - [analysis/](analysis/)
   - [data/](analysis/data/)
     - [egi.csv](analysis/data/egi.csv), comma-delimited file with coordinates of EGI 128 channels.
-    - *.csv, comma-delimited files for individual sessions.
+    - [csv-bysession/](analysis/data/csv-bysession/) comma-delimited files of individual sessions.
     - [Thresh100/](analysis/data/Thresh100/), individual testing sessions.
 
 ## Session Info

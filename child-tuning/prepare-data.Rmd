@@ -1,0 +1,31 @@
+---
+title: "Prepare Data"
+author: "gilmore et al"
+date: "`r Sys.time()`"
+output: html_document
+---
+## Overview
+
+This code takes the session-level data exported from PowerDiva and stored in [analysis/data/Thresh100](analysis/data/Thresh100) and converts it to a set of CSV-formatted files that can be imported into R.
+
+## Set-up
+
+```{r libraries-directories-externals-session-info}
+library(ggplot2)
+library(dplyr)
+
+data.dir <- 'analysis/data/'
+session.dir <- paste(data.dir, 'Thresh100/', sep="")
+csv.dir <- paste(data.dir, 'csv-bysession', sep="")
+
+source('analysis/mofo-RLS-file-convert.R')
+
+sessionInfo()
+```
+
+## Apply conversion function to full session list in `r cat(session.dir)` saving to `r cat(csv.dir)`
+
+```{r convert-all-sessions}
+session.list <- list.dirs(session.dir, recursive = FALSE, full.names = TRUE)
+lapply(session.list, mofo.RLS.file.convert, csv.dir)
+```
