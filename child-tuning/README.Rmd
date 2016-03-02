@@ -10,18 +10,20 @@ bibliography: bibliography.bib
 
 ## Motion Form (MOFO) Child Tuning
 
-This is the repo for the Motion Form (MOFO) tuning study with child participants.
+This is the repo for the Motion Form (MOFO) tuning study with child participants. Last updated `r Sys.time()`.
 
+- *.bib, bibliography file
+- *.Rmd, RMarkdown files for scripting various reports.
 - [notes/](notes/)
-  - [Project notes](notes/project-notes-mofo-child-tuning.md)
-  - [Stimulus parameters](notes/mofo-child-tuning-parameters.md)
-  - [How to transfer files from PowerBook to iMac](connect_PowerBook2iMac.md)
+    - [Project notes](notes/project-notes-mofo-child-tuning.md)
+    - [Stimulus parameters](notes/mofo-child-tuning-parameters.md)
+    - [How to transfer files from PowerBook to iMac](connect_PowerBook2iMac.md)
 - [analysis/](analysis/)
-  - [mofo-RLS-file-convert.R](analysis/mofo-RLS-file-convert.R), function to import, merge, and convert PowerDiva RLS, Session, and related files into CSVs.
-  - [data/](analysis/data/)
-    - [egi.csv](analysis/data/egi.csv), comma-delimited file with coordinates of EGI 128 channels.
-    - [csv-bysession/](analysis/data/csv-bysession/) comma-delimited files of individual sessions.
-    - [Thresh100-identifiable/](analysis/data/Thresh100/), individual testing sessions with identifiable data elements so not pushed to GitHub.
+    - [mofo-RLS-file-convert.R](analysis/mofo-RLS-file-convert.R), function to import, merge, and convert PowerDiva RLS, Session, and related files into CSVs.
+    - [data/](analysis/data/)
+        - [egi.csv](analysis/data/egi.csv), comma-delimited file with coordinates of EGI 128 channels.
+        - [csv-bysession/](analysis/data/csv-bysession/) comma-delimited files of individual sessions.
+        - [Thresh100-identifiable/](analysis/data/Thresh100/), individual testing sessions with identifiable data elements so not pushed to GitHub.
 
 ## Session Info
 ```{r session-info}
