@@ -1,2 +1,0 @@
-iSess	SessDate	Operator	LastName	FirstName	BirthDate	DueDate	DayAge	Sex	Handedness	DaqRateHz	NChan	Montage	Notes	Treatment	Level	DomEye	FK_Mtg	PK_Sess
-20151202_175913	12/2/15	Seisler	1512021042		7/3/09	7/3/09	2343	f		432.43	128	HydroCel 128-Avg		None	0.000	Unkn	0	1
