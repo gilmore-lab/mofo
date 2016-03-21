@@ -2,7 +2,31 @@
 
 This is the project notes file for the MOFO child tuning project.
 
+## 2016-03-21-11:18
+
+- weekly project meeting.
+- AGENDA
+  - Review status of stimulus/condition descriptions and images.
+      - Check with Andrea about status of schematic images.
+      - Need to add schematic images to notes folder and text-based descriptions of the conditions.
+      - Plan to capture videos using GoPro of all conditions and upload to Databrary.
+  - Discuss data analysis plan.
+      - Update RStudio or install, <https://www.rstudio.com/>
+      - Check to see if git installed. From Mac OS X Terminal, enter 'which git', if installed, you should have '/usr/bin/git' as response.
+      - Could install GitHub desktop for Mac or Windows, <https://desktop.github.com/>
+      - 
+  - Discuss Databrary sharing plan.
+      - Daved and Michael will register for Databrary.
+  <http://databrary.org/register>
+      - Check with Andrea about Databrary sharing status.
+      - Design and complete participant data entry into spreadsheet.
+  - Discuss Psychopy-based display code; videos of display conditions.
+  - GOAL: SfN submission deadline is **May 5**, <https://www.sfn.org/annual-meeting/neuroscience-2016/dates-and-deadlines>
+      - Abstract guidelines: <https://www.sfn.org/annual-meeting/neuroscience-2016/abstracts/call-for-abstracts/submission-instructions>
+      - Michael will investigate dynamic poster option.
+
 ## 2016-03-02
+
 - rog refactored the repository to reflect the organization recommended in "Reproducible Research with R and RStudio" by Gandrud.
 - exported all session files with 100 uV artifact threshold (Thresh100) to session-level CSV files. Session-level CSV files were renamed based on iSess (YYYY-MM-DD-HHMMSS.csv) value.
 

@@ -4,7 +4,11 @@ Rick Gilmore
 
 ## Motion Form (MOFO) Child Tuning
 
-This is the repo for the Motion Form (MOFO) tuning study with child participants. Last updated 2016-03-02 12:00:05.
+This is the repo for the Motion Form (MOFO) tuning study with child participants.
+
+Last updated 2016-03-02 13:16:13.
+
+## Contents
 
 - *.bib, bibliography file
 - *.Rmd, RMarkdown files for scripting various reports.

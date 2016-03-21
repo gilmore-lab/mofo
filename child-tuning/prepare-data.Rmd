@@ -1,5 +1,5 @@
 ---
-title: "Prepare Data"
+title: "prepare-data"
 author: "gilmore et al"
 date: "`r Sys.time()`"
 output: html_document

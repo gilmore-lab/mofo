@@ -10,7 +10,11 @@ bibliography: bibliography.bib
 
 ## Motion Form (MOFO) Child Tuning
 
-This is the repo for the Motion Form (MOFO) tuning study with child participants. Last updated `r Sys.time()`.
+This is the repo for the Motion Form (MOFO) tuning study with child participants.
+
+Last updated `r Sys.time()`.
+
+## Contents
 
 - *.bib, bibliography file
 - *.Rmd, RMarkdown files for scripting various reports.
