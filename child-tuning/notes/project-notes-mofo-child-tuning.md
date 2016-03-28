@@ -10,7 +10,7 @@ This is the project notes file for the MOFO child tuning project.
   - Need to de-identify data files and think about sharing strategy.
   - Develop visualization code.
 - Created draft README.md for data file (../analysis/data/README.md)
-- Daved created a commit 
+- Daved created his first commit 
 
 ## 2016-03-21-11:18
 
