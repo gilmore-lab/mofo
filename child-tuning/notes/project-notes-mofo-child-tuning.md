@@ -2,6 +2,15 @@
 
 This is the project notes file for the MOFO child tuning project.
 
+## 2016-03-28-11:36
+
+- weekly project meeting.
+  - Check with Andrea about static images. (M & D will check on status)
+  - Still need to set-up videos. (Schedule with A)
+  - Need to de-identify data files and think about sharing strategy.
+  - Develop visualization code.
+- Created draft README.md for data file (../analysis/data/README.md)
+
 ## 2016-03-21-11:18
 
 - weekly project meeting.
