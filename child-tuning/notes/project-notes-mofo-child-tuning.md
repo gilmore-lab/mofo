@@ -11,6 +11,7 @@ This is the project notes file for the MOFO child tuning project.
   - Develop visualization code.
 - Created draft README.md for data file (../analysis/data/README.md)
 - Daved created a commit 
+- Worked on MD's connection. Worked via GitHub app. Now testing RStudio.
 
 ## 2016-03-21-11:18
 
