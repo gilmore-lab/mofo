@@ -1,0 +1,59 @@
+---
+title: "child-mofo"
+author: "gilmore et al"
+date: "February 22, 2016"
+output: html_document
+---
+
+## Preliminaries - run from folder /Users/ars17/GitHub/mofo
+
+```{r}
+library(ggplot2)
+library(dplyr)
+
+wd.dir <- getwd()
+data.dir <- '../mofo-child-tuning-data-Thresh100'
+rmd.dir <- wd.dir
+source('./child-tuning/R/mofo-RLS-file-convert.R')
+
+this.sub <- '1508121016'
+```
+
+## Import one dataset: `r this.sub`
+
+```{r}
+df <- mofo.RLS.file.convert(dir=paste(data.dir, this.sub, sep="/"))
+str(df)
+```
+
+## Plot some data from this
+
+```{r simple-plot}
+plot(df$Channel, df$Signal)
+with(df, coplot(Signal ~ Channel | Harm))
+```
+
+
+## Apply R script to multiple datasets
+
+``` {r apply mofo.RLS.file.convert to all data files}
+setwd(rmd.dir)
+setwd('../mofo-child-tuning-data-Thresh100/')
+fl <- list.files('../mofo-child-tuning-data-Thresh100/')
+df.list <- lapply(fl, mofo.RLS.file.convert)
+```
+
+## Create a merged data file
+
+``` {r create a merged data file}
+df.merged <- Reduce(function(x,y) merge(x,y, all=TRUE), df.list)
+setwd('../mofo/child-tuning/data')
+write.csv(file = 'merged/mofo-child-merged.csv', df.merged, row.names = FALSE)
+```
+
+## Change condition label names
+
+``` {r}
+df$Cond.Lbl <- factor(df$iCond, names=c("1.2 deg/s dir-180", "1.2 deg/s dir-45", "1.2 deg/s dir-5", "1.2 deg/s coh-100", "1.2 deg/s dir-180 fig only","6 deg/s dir-180", "6 deg/s dir-45", "6 deg/s dir-5", "6 deg/s coh-100", "6 deg/s dir-180 fig only"))
+```
+
