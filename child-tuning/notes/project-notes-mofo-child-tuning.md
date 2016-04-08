@@ -36,6 +36,12 @@ This is the project notes file for the MOFO child tuning project.
       - Abstract guidelines: <https://www.sfn.org/annual-meeting/neuroscience-2016/abstracts/call-for-abstracts/submission-instructions>
       - Michael will investigate dynamic poster option.
 
+## 2016-03-17
+- updated [mofo-child-tuning-parameters.md](https://github.com/gilmore-lab/mofo/blob/master/child-tuning/mofo-child-tuning-parameters.md) to include a short verbal description of all conditions, added speed in deg/s to chart, updated notes to include the names used in the merged datafile for each condition, and copied some text from Fesi et. al. 2011 to start forming a paragraph description of the stimuli. (ars)
+
+## 2016-03-14
+- finished hand drawing pictures of stimuli (ars)
+
 ## 2016-03-02
 
 - rog refactored the repository to reflect the organization recommended in "Reproducible Research with R and RStudio" by Gandrud.
