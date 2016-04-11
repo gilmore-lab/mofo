@@ -2,6 +2,14 @@
 
 This is the project notes file for the MOFO child tuning project.
 
+## 2016-04-11-11:40
+
+- Weekly, Rick, Andrea, Daved, Michael
+- Created make.agg.df.R and make.mofo.df.R functions to create aggregate and single dataframes from CSV files.
+- Exported child-mofo-all.csv, but won't push this to GitHub b/c too big.
+- Noticed that we don't have density and coherence values in data files or dataframe. Put text in mofo-RLS-file-convert.R to show how this may be done using iCond as an index.
+- Talked about ANOVA.
+
 ## 2016-03-28-11:36
 
 - weekly project meeting.

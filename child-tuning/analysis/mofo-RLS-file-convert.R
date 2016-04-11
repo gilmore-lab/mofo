@@ -129,6 +129,10 @@ Speed = factor( rep( rep( c(1, 2), each=(nHarm*NCh) ), times=5), labels=c("1.2de
 
 }
 
+# How to create new factors from iCond
+# dens <- rep(c("10-10", "10-10", "10-10", "10-10", "10-0"), 2)
+# df.agg$Density = factor(df.agg$iCond, levels=dens)
+
 ####	Fix iCh labels to remove hc and -Avg text for readability
 
 Channel = factor( rls.data.df$iCh, labels=1:NCh )
