@@ -2,6 +2,13 @@
 
 This is the project notes file for the MOFO child tuning project.
 
+## 2016-04-18-15:24
+
+- From weekly meeting and Rick's work.
+- Rick accidentally lost all of this morning's work, so he had to regenerate it all.
+- There are a set of new .R functions in the analysis directory. Sourcing [plot.figs.R](../analysis/plot.figs.R) should generate all of the plots and data.
+- Rick saved a draft abstract from a prior SfN submission to [../pubs/sfn-16-abstract.txt](../pubs/sfn-16-abstract.txt). We should use this and the information in [mofo-child-tuning-parameters.md](mofo-child-tuning-parameters.md) to revise the draft abstract. We will determine authorship later.
+
 ## 2016-04-11-11:40
 
 - Weekly, Rick, Andrea, Daved, Michael
