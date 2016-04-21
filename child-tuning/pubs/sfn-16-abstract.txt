@@ -10,12 +10,13 @@ dot kinematogram displays that modulated in time from rotational motion of 100% 
 coherence at a rate of 1.2 Hz (F1). Dots were displaced 10 amin in all conditions at an update rate of 
 24 Hz (F2). Conditions varied in percentage of luminance contrast between dots and background (5%, 10%, 
 20%, 40%, or 80%). A second set of conditions featured identical luminance contrast (80%), but varied in
- dot lifetime setting (1, 2, or 100 updates). Dot update response (1F2) amplitudes varied as a function 
- of luminance contrast, but were above noise levels for luminance contrasts greater than 20%. Dot update 
- response amplitudes were similar in the motion (2 and 100 update) conditions relative to the non-motion 
- (1 update) condition. Thus, responses at the dot update rate consist of a mixture of both local 
- luminance modulation and spatial displacement. The dot update response exhibits properties characteristic of local motion processing observed in V1 cells, and so the analysis of SSVEP responses 
- at the dot update rate provides a convenient, noninvasive way to measure local motion processing.
+dot lifetime setting (1, 2, or 100 updates). Dot update response (1F2) amplitudes varied as a function 
+of luminance contrast, but were above noise levels for luminance contrasts greater than 20%. Dot update 
+response amplitudes were similar in the motion (2 and 100 update) conditions relative to the non-motion 
+(1 update) condition. Thus, responses at the dot update rate consist of a mixture of both local 
+luminance modulation and spatial displacement. The dot update response exhibits properties 
+characteristic of local motion processing observed in V1 cells, and so the analysis of SSVEP responses 
+at the dot update rate provides a convenient, noninvasive way to measure local motion processing.
  
 
 
