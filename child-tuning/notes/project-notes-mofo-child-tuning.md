@@ -2,6 +2,11 @@
 
 This is the project notes file for the MOFO child tuning project.
 
+## 2016-04-27-11:19
+
+- Andrea created .jpg images of the stimuli using OmniGraffle. They are located in the [figs directory](../figs/). I believe the only one that I have a question about is the coh100 image. Do we need the inbetween images where the dots are moving randomly?
+
+
 ## 2016-04-18-15:24
 
 - From weekly meeting and Rick's work.
