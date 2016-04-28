@@ -1,3 +1,5 @@
+# Working script for Child MOFO data
+
 source("child-tuning/analysis/prepare_environment.R")
 
 # load data

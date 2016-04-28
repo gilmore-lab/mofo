@@ -1,0 +1,109 @@
+---
+title: "child-motion-form-direction"
+author: "Rick Gilmore"
+date: "April 28, 2016"
+output: html_document
+params:
+  group: child
+  harmonic: 1F1
+  p_thresh: .0005
+  dpi: 72
+  plot_dev: png
+  n_top: 9
+  plot_titles: FALSE
+  condition: direction
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Load libraries
+library(ggplot2)
+library(dplyr)
+library(png)
+library(gridExtra)
+library(tidyr)
+library(knitr)
+library(DescTools)
+library(heplots) # for etasq()
+library(Cairo)
+
+# Paths to data
+analysis_path <- 'analysis/'
+data_path <- paste(analysis_path, 'data/', sep="")
+figs_path <- 'figs/'
+
+# Source functions
+source("analysis/compute_chan_effects.R")
+source("analysis/manova_channel.R")
+source("analysis/make_stats_df.R")
+source("analysis/extract_stats.R")
+source("analysis/plot_channel_effects.R")
+source("analysis/init_cap.R")
+source("analysis/make_ears_nose_overlay.R")
+source("analysis/plot_channel_magnitudes.R")
+source("analysis/compute_channel_vector_amplitudes.R")
+source("analysis/select_chans_below.R")
+source("analysis/plot_complex_domain_results.R")
+source("analysis/compute_complex_domain_results.R")
+
+# Data file names, paths
+data_fn <- "child-mofo-all.csv"
+egi_fn <- "egi.csv"
+topo_fn <- "topoplog.png"
+
+fn_path <- paste(data_path, data_fn, sep="")
+egi_path <- paste(data_path, egi_fn, sep="")
+topo_path <- paste(figs_path, "topoplot.png", sep="")
+
+# Condition indices
+direction.conds <- c(1,2,3,6,7,8)
+coherence.conds <- c(4,9)
+fig.only.conds <- c(5,10)
+all.conds <- c(1:10)
+
+# load data
+df_all <- read.csv(fn_path)
+df_egi <- read.csv(egi_path)
+
+# Filter by direction or coherence conditions
+if (params$condition == "direction"){
+  condition.indices = direction.conds
+} else if (params$condition == "coherence"){
+  condition.indices = coherence.conds
+} else if (params.condition == "fig-only"){
+  condition.indices = fig.only.conds
+} else {
+  condition.indices = all.conds
+}
+df_all <- df_all %>% filter(Harm == params$harmonic, iCond %in% condition.indices)
+```
+
+# Data plots for `r params$condition` at `r params$harmonic`
+
+## Channel-level effects for `r params$harmonic`
+
+```{r manova-eff-plot, echo=FALSE}
+form <- cbind(Sr, Si) ~ Direction + Speed + Direction*Speed + Error(iSess)
+chan_eff <- compute_chan_effects(df_all, params$harmonic, form)
+df_chan_stats <- make_stats_df(chan_eff, df_egi)
+stats_fn <- paste("analysis/data/child-mofo-", params$harmonic, "-", tolower(params$condition), "-stats.csv", sep="")
+write.csv(x = df_chan_stats, file = stats_fn, row.names = FALSE)
+
+# Plot channel-wise effects
+plot_channel_effects(df_chan_stats, params$harmonic, params$group, topo_path, params$plot_titles)
+```
+
+## Amplitudes for all channels p < `r sprintf("%.4f", as.numeric(params$p_thresh))`
+
+```{r amplitude-barplot, echo=FALSE}
+plot_channel_magnitudes(df_chan_stats, df_all, params$group, params$harmonic, "Direction", as.numeric(params$p_thresh), params$plot_titles)
+plot_channel_magnitudes(df_chan_stats, df_all, params$group, params$harmonic, "Speed", as.numeric(params$p_thresh), params$plot_titles)
+```
+
+## Vector average plots for n=`r params$n_top` high amplitude channels
+
+```{r vector-avg-plot, echo=FALSE}
+plot_complex_domain_results(df_chan_stats, df_all, "Direction", params$group, params$harmonic, as.numeric(params$n_top), as.numeric(params$p_thresh), params$plot_titles)
+plot_complex_domain_results(df_chan_stats, df_all, "Speed", params$group, params$harmonic, as.numeric(params$n_top), as.numeric(params$p_thresh), params$plot_titles)
+```

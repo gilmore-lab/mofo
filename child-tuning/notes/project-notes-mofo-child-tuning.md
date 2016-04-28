@@ -2,10 +2,14 @@
 
 This is the project notes file for the MOFO child tuning project.
 
+## 2016-04-28-10:34
+
+- Rick created a new .Rmd file with parameters to render figures for the direction condition (child-motion-form-direction.Rmd). Sourcing "mofo_render_all.R" then running mofo_render_all() generates .html files in html/ for harmonics 1F1, 2F1, 3F1, and 1F2, respectively. Rick also deleted the RStudio project file in mofo/ and created a new one in mofo/child-tuning.
+- Remaining work needs to be done to modify the child-motion-form-direction.Rmd file and associated .R scripts to work with the coherence and figure-only conditions.
+
 ## 2016-04-27-11:19
 
 - Andrea created .jpg images of the stimuli using OmniGraffle. They are located in the [figs directory](../figs/). I believe the only one that I have a question about is the coh100 image. Do we need the inbetween images where the dots are moving randomly?
-
 
 ## 2016-04-18-15:24
 
