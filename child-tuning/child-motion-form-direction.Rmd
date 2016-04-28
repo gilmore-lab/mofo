@@ -2,7 +2,9 @@
 title: "child-motion-form-direction"
 author: "Rick Gilmore"
 date: "April 28, 2016"
-output: html_document
+output: 
+  html_document:
+    fig_width: 8.5
 params:
   group: child
   harmonic: 1F1
@@ -76,7 +78,6 @@ if (params$condition == "direction"){
 } else {
   condition.indices = all.conds
 }
-df_all <- df_all %>% filter(Harm == params$harmonic, iCond %in% condition.indices)
 ```
 
 # Data plots for `r params$condition` at `r params$harmonic`
@@ -84,6 +85,7 @@ df_all <- df_all %>% filter(Harm == params$harmonic, iCond %in% condition.indice
 ## Channel-level effects for `r params$harmonic`
 
 ```{r manova-eff-plot, echo=FALSE}
+df_all <- df_all %>% filter(Harm == params$harmonic, iCond %in% condition.indices)
 form <- cbind(Sr, Si) ~ Direction + Speed + Direction*Speed + Error(iSess)
 chan_eff <- compute_chan_effects(df_all, params$harmonic, form)
 df_chan_stats <- make_stats_df(chan_eff, df_egi)

@@ -1,4 +1,4 @@
-plot_channel_effects <- function(df, harm, group, topoplot_fullpath, plot_titles) {
+plot_channel_effects <- function(df, harm, group, topoplot_fullpath, plot_titles){
   yquiet = scale_y_continuous("", breaks=NULL)
   xquiet = scale_x_continuous("", breaks=NULL)
   
@@ -6,13 +6,13 @@ plot_channel_effects <- function(df, harm, group, topoplot_fullpath, plot_titles
   pl_theme_topo <- theme(plot.title = element_text(lineheight=.8, 
                                                    face ="bold", 
                                                    vjust=2, 
-                                                   size=16),
+                                                   size=rel(1.5)),
                          legend.title=element_text(size=0),
-                         legend.text=element_text(size=12, face="bold"),
+                         legend.text=element_text(size=rel(1), face="bold"),
                          legend.position="bottom"
   )
   
-  pl_title <- paste(init_cap(group), " Group:\nChannel-wise Effects for ", harm, sep="" )
+  pl_title <- paste(init_cap(group), " Group:\nChannel-wise Effects for ", harm, sep="")
   
   # Plot
   pl <- ggplot(data=df, aes(x=xpos, 
