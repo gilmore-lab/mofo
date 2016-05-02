@@ -13,6 +13,6 @@ Each condition was presented at two speeds (1.2 and 6.0 deg/s). EEG was collecte
 The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor. 
 We chose p<.0005 as our alpha level to reduce the likelihood of reporting false positives. Statistically significant effects for direction were found at 1F1, 2F1, and 3F1, and these showed a broad distribution across the scalp. 
 No channels met criterion for the effect of speed at any harmonic. 
-Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 2F1 and 3F1. 
+Many, but not all channels showed the scaling of amplitude by figure/background direction difference found in adults, an effect particularly pronounced at 3F1. 
 Complex domain plots of the most reponsive channels at 2F1 and 3F1 showed consistent phase and amplitude profiles. 
 These results show that the appearance and disappearance of visual forms defined by local motion differences engages a widespread network of brain regions in school-age children that is similar but not identical to adults.
