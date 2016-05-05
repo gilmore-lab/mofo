@@ -16,16 +16,26 @@ Table below values for F1-F2
 | 7 |100-100 |10-10|6.0-6.0|0-45  |10-10 | dir-45|
 | 8 |100-100 |10-10|6.0-6.0|0-5   |10-10 | dir-5|
 | 9 |0-100   |10-10|6.0-6.0|0-0   |10-10 | coh-100|
-| 10|100-100 |10-10|6.0-6.0|0-180 |10-0  |figure only |
+| 10|100-100 |10-10|6.0-6.0|0-180 |10-0  |dir-180-figure only |
 
-
+F1 = Fundamental Frequency
+F2 = Dot Update Rate
+Screen Refresh Rate = 72Hz
 View Distance: 60.31  
 Mean Lum: 40.73  
 Contrast %: 90.00  
 Pix size (Amin): 7.00  
 
+### Calculate deg/s from amin
+
+dx = 2 amin or 10 amin  
+dt = 1/36
+
+(amin / update) x (1 deg/60 amin) x (36 updates/sec) = deg/sec     
+
 
 ## Written Condition Description
+
 
 ####From Fesi et al. 2011
 
