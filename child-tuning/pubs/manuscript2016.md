@@ -1,4 +1,5 @@
-Mofo child manuscript
+Mofo child manuscript  
+- Items in bold need to be checked for accuracy.
 
 ## Methods
 Participants
@@ -23,6 +24,13 @@ EEG analysis
 PowerDiva Host 3.4 software was used offline to analyze the cortical activity related to the display of the stimuli. Amplitude modulations that exceeded 100 µV were rejected as artifact as well as entire trials that had greater than 15% of rejected cycles.  The software analyzes EEG patterns using a version of the discrete Fourier transform. The software extracted frequency domain components at low order integer harmonics of the fundamental frequency (1F1=1.2 Hz) of the motion coherence modulation and the dot update rate (1F2=36 Hz) using a discrete Fourier transform algorithm. 
 
 Phase-locked coherent averages of response amplitudes were analyzed and visualized using R 3.2.1 [71], RStudio 0.99.489 (http://www.rstudio.com), and the packages ggplot2 [72] and dplyr [73]. The complex domain (real and imaginary) components of each channel were analyzed using mixed-effects MANOVA, with direction difference and speed as fixed factors and participant as a random factor. We analyzed speed and pattern effects separately for each individual channel while choosing a conservative criterion (p<.0005) as our alpha level to reduce the likelihood of reporting false positives. Topographic visualizations of the data were created with the effects of Pattern and Speed on the VEP signal.
+
+
+
+
+____________________________
+**Language from other papers**
+
 
 
 Data analysis focused on the phase-locked amplitude of responses at 1F1, 2F1, 3F1 ....
