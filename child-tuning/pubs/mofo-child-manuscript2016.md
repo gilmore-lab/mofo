@@ -1,4 +1,4 @@
-Mofo child manuscript  
+# Mofo child manuscript  
 - Items in bold need to be checked for accuracy.
 
 ## Methods
