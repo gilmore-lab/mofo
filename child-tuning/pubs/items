@@ -1,0 +1,50 @@
+
+@article{gilmore_childrens_2016,
+	title = {Children's {Brain} {Responses} to {Optic} {Flow} {Vary} by {Pattern} {Type} and {Motion} {Speed}},
+	volume = {11},
+	issn = {1932-6203},
+	url = {http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0157911},
+	doi = {10.1371/journal.pone.0157911},
+	abstract = {Structured patterns of global visual motion called optic flow provide crucial information about an observer's speed and direction of self-motion and about the geometry of the environment. Brain and behavioral responses to optic flow undergo considerable postnatal maturation, but relatively little brain imaging evidence describes the time course of development in motion processing systems in early to middle childhood, a time when psychophysical data suggest that there are changes in sensitivity. To fill this gap, electroencephalographic (EEG) responses were recorded in 4- to 8-year-old children who viewed three time-varying optic flow patterns (translation, rotation, and radial expansion/contraction) at three different speeds (2, 4, and 8 deg/s). Modulations of global motion coherence evoked coherent EEG responses at the first harmonic that differed by flow pattern and responses at the third harmonic and dot update rate that varied by speed. Pattern-related responses clustered over right lateral channels while speed-related responses clustered over midline channels. Both children and adults show widespread responses to modulations of motion coherence at the second harmonic that are not selective for pattern or speed. The results suggest that the developing brain segregates the processing of optic flow pattern from speed and that an adult-like pattern of neural responses to optic flow has begun to emerge by early to middle childhood.},
+	number = {6},
+	urldate = {2016-09-20TZ},
+	journal = {PLOS ONE},
+	author = {Gilmore, Rick O. and Thomas, Amanda L. and Fesi, Jeremy},
+	month = jun,
+	year = {2016},
+	keywords = {Adults, Behavior, Cognitive science, Electroencephalography, Eye movements, Infants, Scanning electron microscopy, Vision},
+	pages = {e0157911}
+}
+
+@article{fesi_distinct_2011,
+	title = {Distinct cortical responses to 2D figures defined by motion contrast},
+	volume = {51},
+	issn = {0042-6989},
+	url = {http://www.sciencedirect.com/science/article/pii/S0042698911002616},
+	doi = {10.1016/j.visres.2011.07.015},
+	abstract = {Motion contrast contributes to the segregation of a two-dimensional figure from its background, yet many questions remain about its neural mechanisms. We measured steady-state visual evoked potential (SSVEP) responses to moving dot displays in which figure regions emerged from and disappeared into the background at a specific temporal frequency (1.2 Hz, F1), based on regional differences of dot direction and global direction coherence. The goal was to measure the cortical response function across a range of motion contrast magnitudes. In two experiments using both a low channel count electrode array (Experiment 1) and a high density array (Experiment 2), we observed two distinct phase-locked evoked responses that were similar across motion contrast type. A response at 1.2 Hz (1F1) increased in amplitude with increasing magnitudes of direction or coherence contrast. A response at 2.4 Hz (2F1) increased in amplitude, but saturated at low levels of direction or coherence contrast. The two components showed different scalp distributions – the 1F1 was strongest along medial occipital channels, while the 2F1 was bilaterally distributed. Taken together, the studies suggest that figures defined by different types of motion contrast are processed by cortical systems with similar dynamics, and that there are separable neural systems devoted to (i) signaling the absolute magnitude of motion contrast and (ii) detecting when a figure defined by motion contrast appears and disappears from view.},
+	number = {19},
+	urldate = {2015-05-02TZ},
+	journal = {Vision Research},
+	author = {Fesi, Jeremy D. and Yannes, Michael P. and Brinckman, Danielle D. and Norcia, Anthony M. and Ales, Justin M. and Gilmore, Rick O.},
+	month = oct,
+	year = {2011},
+	keywords = {Adolescent, Adult, Contrast sensitivity, Evoked Potentials, Evoked Potentials, Visual, Female, Figure segmentation, Humans, Linear Models, Male, Motion Perception, Motion processing, Photic Stimulation, Visual Cortex, Young Adult, electrophysiology},
+	pages = {2110--2120}
+}
+
+@article{fesi_cortical_2014,
+	title = {Cortical responses to optic flow and motion contrast across patterns and speeds},
+	volume = {100},
+	issn = {0042-6989},
+	url = {http://www.sciencedirect.com/science/article/pii/S0042698914000765},
+	doi = {10.1016/j.visres.2014.04.004},
+	abstract = {Motion provides animals with fast and robust cues for navigation and object detection. In the first case, stereotyped patterns of optic flow inform a moving observer about the direction and speed of its own movement. In the case of object detection, regional differences in motion allow for the segmentation of figures from their background, even in the absence of color or shading cues. Previous research has investigated human electrophysiological responses to global motion across speeds, but only focused upon one type of optic flow pattern. Here, we compared steady-state visual evoked potential (SSVEP) responses across patterns and speeds, both for optic flow and for motion-defined figure patterns, to assess the extent to which the processes are pattern-general or pattern-specific. For optic flow, pattern and speed effects on response amplitudes varied substantially across channels, suggesting pattern-specific processing at slow speeds and pattern-general activity at fast speeds. Responses for coherence- and direction-defined figures were comparatively more uniform, with similar response profiles and spatial distributions. Self- and object-motion patterns activate some of the same circuits, but these data suggest differential sensitivity: not only across the two classes of motion, but also across the patterns within each class, and across speeds. Thus, the results demonstrate that cortical processing of global motion is complex and activates a distributed network.},
+	urldate = {2015-05-02TZ},
+	journal = {Vision Research},
+	author = {Fesi, Jeremy D. and Thomas, Amanda L. and Gilmore, Rick O.},
+	month = jul,
+	year = {2014},
+	keywords = {Motion, Motion contrast, Optic flow, SSVEP, electrophysiology},
+	pages = {56--71}
+}
